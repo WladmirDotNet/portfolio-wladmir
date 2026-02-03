@@ -7,7 +7,7 @@ import { useState } from "react";
 interface SkillCardProps {
   title: string;
   items: string[];
-  icon: keyof typeof Icons;
+  icon: string;
   delay?: number;
 }
 

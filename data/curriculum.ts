@@ -272,7 +272,7 @@ export const curriculum = {
   differentials: [
     {
       title: "Paixão pela Tecnologia desde a Infância",
-      icon: "Heart",
+      icon: "Heart" as const,
       items: [
         "Primeiro contato com programação aos 8 anos de idade",
         "Código consistente e funcional aos 11 anos",
@@ -282,7 +282,7 @@ export const curriculum = {
     },
     {
       title: "Experiência em Sistemas de Alta Complexidade",
-      icon: "Zap",
+      icon: "Zap" as const,
       items: [
         "Sistemas bancários para +70 bancos nacionais e internacionais",
         "Plataformas financeiras que processaram +R$ 900 milhões",
@@ -293,7 +293,7 @@ export const curriculum = {
     },
     {
       title: "Liderança Técnica de Longo Prazo",
-      icon: "Users",
+      icon: "Users" as const,
       items: [
         "+10 anos como principal responsável tecnológico em empresa líder de mercado",
         "Histórico de promoções por mérito e reconhecimento técnico",
@@ -302,7 +302,7 @@ export const curriculum = {
     },
     {
       title: "Arquitetura Moderna e Escalável",
-      icon: "Network",
+      icon: "Network" as const,
       items: [
         "Domínio completo de Clean Architecture, DDD e CQRS",
         "Implementação de microservices e sistemas distribuídos",
@@ -316,7 +316,7 @@ export const curriculum = {
     },
     {
       title: "Código de Qualidade Produção-Ready",
-      icon: "CheckCircle",
+      icon: "CheckCircle" as const,
       items: [
         "Aplicação consistente de SOLID e Clean Code",
         "Documentação XML completa em todas as APIs públicas",
@@ -328,7 +328,7 @@ export const curriculum = {
     },
     {
       title: "Data Engineering & Big Data",
-      icon: "Database",
+      icon: "Database" as const,
       items: [
         "AWS Glue com PySpark para ETL pipelines",
         "Integração Databricks e Azure Synapse Analytics",
@@ -340,7 +340,7 @@ export const curriculum = {
     },
     {
       title: "Inteligência Artificial Aplicada",
-      icon: "Brain",
+      icon: "Brain" as const,
       items: [
         "OpenAI GPT-4 (Chat Completions com contexto médico)",
         "OpenAI Whisper (Transcrição de áudio médico)",
@@ -354,7 +354,7 @@ export const curriculum = {
     },
     {
       title: "Conhecimento Profundo do Mercado Brasileiro",
-      icon: "MapPin",
+      icon: "MapPin" as const,
       items: [
         "Integrações bancárias e financeiras (PIX, TEF)",
         "Validações e formatações brasileiras",

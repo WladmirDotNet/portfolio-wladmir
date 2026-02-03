@@ -5,7 +5,7 @@ import * as Icons from "lucide-react";
 
 interface Differential {
   title: string;
-  icon: keyof typeof Icons;
+  icon: string;
   items: string[];
 }
 
