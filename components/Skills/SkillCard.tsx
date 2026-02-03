@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import * as Icons from "lucide-react";
+import { Boxes, Database, Cloud, CloudCog, Workflow, MessageSquare, Link, Shield, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
 interface SkillCardProps {
@@ -11,9 +11,21 @@ interface SkillCardProps {
   delay?: number;
 }
 
+const iconMap: Record<string, any> = {
+  Boxes,
+  Database,
+  Cloud,
+  CloudCog,
+  Workflow,
+  MessageSquare,
+  Link,
+  Shield,
+  CheckCircle2,
+};
+
 export function SkillCard({ title, items, icon, delay = 0 }: SkillCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const Icon = Icons[icon] as any;
+  const Icon = iconMap[icon];
 
   return (
     <motion.div

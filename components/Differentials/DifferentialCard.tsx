@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import * as Icons from "lucide-react";
+import { Heart, Zap, Users, Network, CheckCircle, Database, Brain, MapPin } from "lucide-react";
 
 interface Differential {
   title: string;
@@ -14,11 +14,22 @@ interface DifferentialCardProps {
   delay?: number;
 }
 
+const iconMap: Record<string, any> = {
+  Heart,
+  Zap,
+  Users,
+  Network,
+  CheckCircle,
+  Database,
+  Brain,
+  MapPin,
+};
+
 export function DifferentialCard({
   differential,
   delay = 0,
 }: DifferentialCardProps) {
-  const Icon = Icons[differential.icon] as any;
+  const Icon = iconMap[differential.icon];
 
   return (
     <motion.div
