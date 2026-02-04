@@ -396,7 +396,6 @@ export const curriculum = {
       items: [
         "AWS Glue com PySpark para ETL pipelines",
         "Integração Databricks e Azure Synapse Analytics",
-        "Modelagem dimensional (Dimensões e Fatos)",
         "Arquitetura Data Lakehouse com Parquet",
         "Integração híbrida AWS + Azure para data pipelines",
         "JDBC connections para SQL Server, PostgreSQL, Databricks",
