@@ -196,6 +196,7 @@ export const curriculum = {
       description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 70 repositórios e 99+ microservices em produção.",
       achievements: [
         "🏆 Fundador do Marco de Manifesto de Arquitetura da Levva - criação de fundamentos e bases para padronização arquitetural em toda a empresa e ecossistemas",
+        "🏗️ Criador do template base para APIs e Microserviços (.NET e Lambda Functions) usado por toda a Levva para novos produtos",
         "Arquitetura de microservices em escala enterprise (70+ repos, 99+ serviços)",
         "Kubernetes (EKS) com Helm e ArgoCD para GitOps",
         "Pipelines CI/CD reutilizáveis com GitHub Actions e Bitbucket",
@@ -351,6 +352,7 @@ export const curriculum = {
       icon: "Network" as const,
       items: [
         "🏆 Fundador do Marco de Manifesto de Arquitetura (Levva) - padronização em toda empresa",
+        "🏗️ Criador de templates base (.NET e Lambda) usados por toda empresa",
         "Criação de fundamentos e bases arquiteturais para ecossistemas corporativos",
         "Domínio completo de Clean Architecture, DDD e CQRS",
         "Implementação de microservices e sistemas distribuídos",
