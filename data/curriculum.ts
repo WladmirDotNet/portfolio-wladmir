@@ -39,7 +39,7 @@ export const curriculum = {
       { name: "C# / .NET 6/8/9", level: 100 },
       { name: "ASP.NET Core", level: 100 },
       { name: "Entity Framework Core", level: 100 },
-      { name: "Dapper", level: 95 },
+      { name: "Dapper", level: 100 },
       { name: "Python / PySpark", level: 75 },
       { name: "Node.js / Express", level: 75 },
       { name: "SQL / T-SQL / PL/pgSQL", level: 100 },
