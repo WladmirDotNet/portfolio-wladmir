@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wladmir Bonazza - Currículo Completo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'IBM Plex Sans', Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #f8fafc;
+        }
+        
+        .page {
+            width: 210mm;
+            background: white;
+            margin: 10mm auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 65mm 145mm;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 15mm 8mm;
+        }
+        
+        .sidebar h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            margin-bottom: 8pt;
+            margin-top: 12pt;
+            padding-bottom: 4pt;
+            border-bottom: 1.5pt solid rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+        }
+        
+        .sidebar h2:first-child {
+            margin-top: 0;
+        }
+        
+        .sidebar section {
+            margin-bottom: 12pt;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            margin-top: 6pt;
+        }
+        
+        .sidebar li {
+            font-size: 8pt;
+            margin-bottom: 4pt;
+            padding-left: 10pt;
+            position: relative;
+            line-height: 1.3;
+        }
+        
+        .sidebar li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+            font-weight: bold;
+        }
+        
+        .skill-bar {
+            margin-bottom: 8pt;
+        }
+        
+        .skill-name {
+            font-size: 8.5pt;
+            margin-bottom: 2pt;
+            font-weight: 500;
+        }
+        
+        .bar {
+            height: 4pt;
+            background: rgba(255,255,255,0.2);
+            border-radius: 2pt;
+            overflow: hidden;
+        }
+        
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+            border-radius: 2pt;
+        }
+        
+        .contact-item {
+            font-size: 7.5pt;
+            margin-bottom: 5pt;
+            line-height: 1.3;
+            display: flex;
+            align-items: flex-start;
+            gap: 4pt;
+        }
+        
+        .contact-icon {
+            min-width: 10pt;
+            font-weight: 600;
+        }
+        
+        .language-item {
+            margin-bottom: 8pt;
+        }
+        
+        .lang-name {
+            font-size: 9pt;
+            font-weight: 600;
+            margin-bottom: 2pt;
+        }
+        
+        .lang-dots {
+            display: flex;
+            gap: 2pt;
+            margin-top: 2pt;
+        }
+        
+        .dot {
+            width: 5pt;
+            height: 5pt;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .dot.filled {
+            background: #60a5fa;
+        }
+        
+        .lang-note {
+            font-size: 6.5pt;
+            color: rgba(255,255,255,0.7);
+            margin-top: 1pt;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 15mm 10mm;
+        }
+        
+        .header-main {
+            margin-bottom: 12pt;
+            padding-bottom: 10pt;
+            border-bottom: 2pt solid #2563eb;
+        }
+        
+        .name-main {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 4pt;
+            letter-spacing: -0.3pt;
+        }
+        
+        .subtitle {
+            font-size: 10pt;
+            color: #64748b;
+            margin-bottom: 6pt;
+            font-weight: 500;
+        }
+        
+        .tagline {
+            background: #eff6ff;
+            border-left: 3pt solid #2563eb;
+            padding: 8pt 10pt;
+            font-size: 9pt;
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-top: 8pt;
+        }
+        
+        /* Sections */
+        .section-main {
+            margin-bottom: 12pt;
+        }
+        
+        .section-main h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 8pt;
+            padding-bottom: 3pt;
+            border-bottom: 1.5pt solid #2563eb;
+        }
+        
+        .summary-text {
+            font-size: 9pt;
+            line-height: 1.5;
+            text-align: justify;
+            color: #334155;
+            margin-bottom: 6pt;
+        }
+        
+        .summary-text strong {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+        
+        /* Stats */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6pt;
+            margin: 10pt 0;
+        }
+        
+        .stat-box {
+            background: #eff6ff;
+            border-left: 2pt solid #2563eb;
+            padding: 8pt;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #2563eb;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 7pt;
+            color: #64748b;
+            margin-top: 2pt;
+        }
+        
+        /* Experience */
+        .exp-item {
+            margin-bottom: 12pt;
+            page-break-inside: avoid;
+        }
+        
+        .exp-company {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 2pt;
+        }
+        
+        .exp-role {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 2pt;
+        }
+        
+        .exp-meta {
+            font-size: 8pt;
+            color: #64748b;
+            margin-bottom: 6pt;
+        }
+        
+        .exp-highlight {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 2pt 6pt;
+            border-radius: 2pt;
+            font-size: 7.5pt;
+            font-weight: 600;
+            margin-left: 4pt;
+        }
+        
+        .exp-desc {
+            font-size: 8.5pt;
+            line-height: 1.4;
+            margin-bottom: 6pt;
+            color: #475569;
+        }
+        
+        .exp-achievements {
+            list-style: none;
+            font-size: 8.5pt;
+            margin-top: 4pt;
+        }
+        
+        .exp-achievements li {
+            margin-bottom: 3pt;
+            padding-left: 10pt;
+            position: relative;
+            line-height: 1.3;
+        }
+        
+        .exp-achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .tech-tags {
+            margin-top: 6pt;
+            font-size: 7pt;
+            color: #64748b;
+            line-height: 1.4;
+        }
+        
+        .tech-tags strong {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+        
+        .impact-note {
+            background: #eff6ff;
+            border-left: 2pt solid #2563eb;
+            padding: 6pt 8pt;
+            margin-top: 6pt;
+            font-size: 8pt;
+            font-style: italic;
+            color: #1e40af;
+            line-height: 1.4;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6pt;
+            margin-top: 8pt;
+        }
+        
+        .skill-category {
+            background: #f8fafc;
+            padding: 8pt;
+            border-left: 2pt solid #2563eb;
+        }
+        
+        .skill-category h4 {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 4pt;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            font-size: 7.5pt;
+            line-height: 1.3;
+        }
+        
+        .skill-category li {
+            margin-bottom: 2pt;
+            padding-left: 8pt;
+            position: relative;
+        }
+        
+        .skill-category li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+        
+        /* Differentials */
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8pt;
+            margin-top: 8pt;
+        }
+        
+        .diff-card {
+            background: #f8fafc;
+            padding: 8pt;
+            border-left: 2pt solid #2563eb;
+        }
+        
+        .diff-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 4pt;
+        }
+        
+        .diff-card ul {
+            list-style: none;
+            font-size: 7.5pt;
+            line-height: 1.3;
+        }
+        
+        .diff-card li {
+            margin-bottom: 2pt;
+            padding-left: 8pt;
+            position: relative;
+        }
+        
+        .diff-card li:before {
+            content: "►";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-size: 6pt;
+        }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6pt;
+            margin-top: 8pt;
+        }
+        
+        .project-card {
+            background: #f8fafc;
+            padding: 6pt;
+            border-top: 2pt solid #2563eb;
+        }
+        
+        .project-name {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 2pt;
+        }
+        
+        .project-desc {
+            font-size: 7.5pt;
+            color: #64748b;
+            line-height: 1.3;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10pt 15mm;
+            border-top: 1pt solid #e2e8f0;
+            font-size: 7.5pt;
+            color: #64748b;
+            background: #f8fafc;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #1e3a8a;
+            font-weight: 500;
+            margin-bottom: 6pt;
+            font-size: 8.5pt;
+        }
+        
+        /* Utility */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8pt;
+        }
+        
+        .highlight {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+        
+        @media screen {
+            .page {
+                margin: 10mm auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Contact -->
+                <section>
+                    <h2>Contato</h2>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+55 84 99960-1312</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>wladmir.net@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <span>linkedin.com/in/wladmir-bonazza</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <span>github.com/WladmirDotNet</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Brasil (Trabalho Remoto)</span>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section>
+                    <h2>Idiomas</h2>
+                    <div class="language-item">
+                        <div class="lang-name">🇧🇷 Português</div>
+                        <div class="lang-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                        </div>
+                        <div class="lang-note">Nativo</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="lang-name">🇪🇸 Espanhol</div>
+                        <div class="lang-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                        </div>
+                        <div class="lang-note">Nativo (residiu no Paraguai)</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="lang-name">🇺🇸 Inglês</div>
+                        <div class="lang-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="lang-note">Técnico (Leitura/Escrita)</div>
+                    </div>
+                </section>
+
+                <!-- Tech Proficiency -->
+                <section>
+                    <h2>Proficiência</h2>
+                    <div class="skill-bar">
+                        <div class="skill-name">C# / .NET</div>
+                        <div class="bar"><div class="bar-fill" style="width: 100%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">ASP.NET Core</div>
+                        <div class="bar"><div class="bar-fill" style="width: 100%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">PostgreSQL</div>
+                        <div class="bar"><div class="bar-fill" style="width: 100%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">AWS Cloud</div>
+                        <div class="bar"><div class="bar-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Python/PySpark</div>
+                        <div class="bar"><div class="bar-fill" style="width: 75%"></div></div>
+                    </div>
+                </section>
+
+                <!-- Expertise -->
+                <section>
+                    <h2>Arquitetura</h2>
+                    <ul>
+                        <li>Clean Architecture</li>
+                        <li>Domain-Driven Design</li>
+                        <li>CQRS</li>
+                        <li>Event-Driven</li>
+                        <li>Microservices</li>
+                        <li>API Design</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Cloud</h2>
+                    <ul>
+                        <li>AWS: ECR, S3, SQS, SES, SNS, Glue, Lambda</li>
+                        <li>Azure: Databricks, Synapse, Azure AD</li>
+                        <li>Multi-cloud architecture</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>DevOps</h2>
+                    <ul>
+                        <li>Docker</li>
+                        <li>GitHub Actions</li>
+                        <li>Bitbucket Pipelines</li>
+                        <li>HashiCorp Vault</li>
+                        <li>SonarQube</li>
+                        <li>OpenTofu/Terraform</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Segurança</h2>
+                    <ul>
+                        <li>Keycloak (OAuth2/OIDC)</li>
+                        <li>JWT Authentication</li>
+                        <li>HashiCorp Vault</li>
+                        <li>Rate Limiting</li>
+                        <li>Auditoria & Compliance</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Integrações</h2>
+                    <ul>
+                        <li>OpenAI (GPT-4, Whisper, Vision)</li>
+                        <li>WhatsApp Business</li>
+                        <li>APIs Bancárias (PIX)</li>
+                        <li>Microsoft Graph</li>
+                        <li>RD Station, DatoCMS</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Documentação</h2>
+                    <ul>
+                        <li>Diagramas C4 Model</li>
+                        <li>ADRs (Architecture Decision Records)</li>
+                        <li>Postmortems</li>
+                        <li>RFCs técnicos</li>
+                        <li>Design Documents</li>
+                        <li>API Documentation</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Header -->
+                <div class="header-main">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div style="flex: 1;">
+                            <h1 class="name-main">WLADMIR BONAZZA</h1>
+                            <div class="subtitle">Software Architect | Solutions Architect | Tech Lead | Backend Specialist</div>
+                            <div class="tagline">
+                                🎯 <strong>PROGRAMANDO DESDE OS 8 ANOS</strong> | Código consistente aos 11 anos | +30 anos de jornada tecnológica
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-left: 15pt;">
+                            <a href="https://wladmirdotnet.github.io/portfolio-wladmir/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block; background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); padding: 10pt; border-radius: 8pt; box-shadow: 0 4pt 12pt rgba(37,99,235,0.3); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-align: center;" onmouseover="this.style.transform='translateY(-2pt)'; this.style.boxShadow='0 6pt 16pt rgba(37,99,235,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4pt 12pt rgba(37,99,235,0.3)'">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wladmirdotnet.github.io/portfolio-wladmir/" alt="QR Code Portfolio" style="display: block; width: 80pt; height: 80pt; border: 3pt solid white; border-radius: 4pt; margin: 0 auto;">
+                                <div style="color: white; font-size: 7pt; font-weight: 700; margin-top: 6pt; text-transform: uppercase; letter-spacing: 0.5pt;">
+                                    📱 Escaneie ou Clique Aqui!
+                                </div>
+                                <div style="color: rgba(255,255,255,0.9); font-size: 6.5pt; margin-top: 2pt; line-height: 1.2;">
+                                    Veja meu portfolio<br><strong>INTERATIVO</strong> online!
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-value">30+</span>
+                        <div class="stat-label">anos com tecnologia</div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">R$ 5.4bi</span>
+                        <div class="stat-label">em sistemas</div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">70+</span>
+                        <div class="stat-label">repositórios</div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">31+</span>
+                        <div class="stat-label">microservices</div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="section-main">
+                    <h2>Perfil Profissional</h2>
+                    <p class="summary-text">
+                        Arquiteto de Software com <strong>17 anos de experiência profissional</strong> e uma jornada de <strong>30+ anos com programação</strong> - tendo iniciado aos <strong>8 anos de idade</strong> e produzindo código consistente já aos <strong>11 anos</strong>. Essa paixão precoce pela tecnologia moldou uma carreira sólida no desenvolvimento de soluções de alta complexidade, com especialização em <strong>arquiteturas escaláveis</strong>, <strong>cloud computing</strong> e <strong>sistemas distribuídos</strong> para os setores financeiro, fintech, farmacêutico e terceiro setor.
+                    </p>
+                    <p class="summary-text">
+                        Histórico comprovado de liderança técnica em projetos críticos, incluindo sistemas que processaram mais de <strong>R$ 900 milhões</strong> em captação de recursos, soluções para mais de <strong>70 bancos</strong> nacionais e internacionais, e arquitetura de microservices para o <strong>Grupo NC</strong> (<strong>R$ 4,5 bilhões/ano</strong> em movimentação, <strong>70+ repositórios</strong>, <strong>31+ serviços</strong> em produção).
+                    </p>
+                    <p class="summary-text">
+                        Perfil <strong>hands-on</strong> com domínio completo do ciclo de desenvolvimento, desde a concepção arquitetural até a entrega em produção. Atualmente explorando <strong>Inteligência Artificial aplicada à saúde</strong> com OpenAI (GPT-4, Whisper, Vision) em projetos pessoais.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="section-main">
+                    <h2>Experiência Profissional</h2>
+                    
+                    <!-- BeCash -->
+                    <div class="exp-item">
+                        <div class="exp-company">BeCash Programa de Vantagens e Fidelidade</div>
+                        <div class="exp-role">Arquiteto de Soluções</div>
+                        <div class="exp-meta">Abril 2025 - Presente | Brasil (Remoto)</div>
+                        <p class="exp-desc">Responsável pela arquitetura e desenvolvimento de toda a plataforma tecnológica da BeCash, uma fintech de programa de vantagens e fidelidade.</p>
+                        <ul class="exp-achievements">
+                            <li>Arquitetura completa do backend utilizando Clean Architecture, DDD e CQRS</li>
+                            <li>Implementação de sistema de pagamentos PIX com validação EMV e CRC-16</li>
+                            <li>Desenvolvimento de integração com WhatsApp Business API</li>
+                            <li>Infraestrutura AWS completa (S3, SQS FIFO, SES, SNS, Secrets Manager)</li>
+                            <li>Sistema de autenticação JWT com permissões granulares por empresa</li>
+                            <li>API de comunicação em tempo real com SignalR</li>
+                            <li>Pipeline de CI/CD automatizado com GitHub Actions e Elastic Beanstalk</li>
+                            <li>Sistema de auditoria completa de todas as ações do usuário</li>
+                            <li>Biblioteca de utilitários para validações brasileiras (CPF, CNPJ, PIX)</li>
+                        </ul>
+                        <div class="tech-tags"><strong>Tecnologias:</strong> .NET 9.0, ASP.NET Core, Entity Framework Core, PostgreSQL, Redis, AWS (S3, SQS, SES, SNS), Docker, SignalR, Node.js, Baileys</div>
+                    </div>
+
+                    <!-- Levva Grupo NC -->
+                    <div class="exp-item">
+                        <div class="exp-company">Levva - Grupo NC (EMS, Brace Farma, Ofta)<span class="exp-highlight">R$ 4.5 bi/ano</span></div>
+                        <div class="exp-role">Arquiteto de Software</div>
+                        <div class="exp-meta">Maio 2024 - Junho 2025 (1 ano 2 meses) | Foz do Iguaçu, PR (Remoto)</div>
+                        <p class="exp-desc">Liderança técnica e arquitetura de soluções para o <strong>Grupo NC</strong>, um dos maiores grupos farmacêuticos do mundo, com movimentação de <strong>R$ 4,5 bilhões/ano</strong>. Responsável por mais de <strong>70 repositórios</strong> e <strong>31+ microservices</strong> em produção.</p>
+                        <ul class="exp-achievements">
+                            <li>Arquitetura de microservices em escala enterprise (70+ repositórios, 31+ serviços)</li>
+                            <li>Pipelines CI/CD com GitHub Actions e Bitbucket</li>
+                            <li>Pipelines CI/CD reutilizáveis com GitHub Actions e Bitbucket</li>
+                            <li>HashiCorp Vault para gestão de secrets com External Secrets Operator</li>
+                            <li>Data Engineering com AWS Glue e PySpark (integração Databricks/Azure Synapse)</li>
+                            <li>Integração multi-cloud AWS + Azure (Databricks, Graph API, SharePoint)</li>
+                            <li>Sistemas de visitação médica, prescrição e amostras grátis</li>
+                        </ul>
+                        <div class="impact-note">
+                            <strong>Impacto:</strong> Infraestrutura tecnológica que suporta operações de R$ 4,5 bilhões/ano em força de vendas e programas de relacionamento médico em todo o Brasil para empresas como EMS, Brace Farma, Ofta e outras marcas do Grupo NC.
+                        </div>
+                        <div class="tech-tags"><strong>Stack:</strong> .NET 6/8, AWS (ECR, S3, SQS, Glue, Lambda), Azure (Databricks, Synapse), Docker, GitHub Actions, Bitbucket, Vault, Keycloak, PostgreSQL, Redis, MySQL, PySpark, RabbitMQ, MassTransit, Datadog, Serilog, Elasticsearch, SonarQube</div>
+                    </div>
+
+                    <!-- Levva Analista -->
+                    <div class="exp-item">
+                        <div class="exp-company">Levva - Grupo NC</div>
+                        <div class="exp-role">Analista de Sistemas</div>
+                        <div class="exp-meta">Junho 2023 - Maio 2024 (1 ano) | Rio Grande do Norte (Remoto)</div>
+                        <p class="exp-desc">Desenvolvimento e manutenção de sistemas críticos para o setor farmacêutico.</p>
+                        <ul class="exp-achievements">
+                            <li>Desenvolvimento de APIs REST com .NET 6/8 e Clean Architecture</li>
+                            <li>Integrações com sistemas legados e APIs externas</li>
+                            <li>Implementação de CQRS com MediatR e FluentValidation</li>
+                            <li>Desenvolvimento de jobs ETL com AWS Glue</li>
+                            <li>Code reviews e definição de padrões</li>
+                        </ul>
+                        <div class="tech-tags"><strong>Tecnologias:</strong> .NET 6/8, PostgreSQL, AWS, Keycloak, RabbitMQ</div>
+                    </div>
+
+                    <!-- Função -->
+                    <div class="exp-item">
+                        <div class="exp-company">Função Sistemas<span class="exp-highlight">70 bancos</span></div>
+                        <div class="exp-role">Desenvolvedor Sênior → Analista de Sistemas</div>
+                        <div class="exp-meta">Abril 2021 - Junho 2023 (2 anos 5 meses) | São Paulo, SP (Remoto)</div>
+                        <p class="exp-desc">Líder de mercado em soluções para operações de crédito há mais de 30 anos, atendendo mais de <strong>70 bancos</strong> nacionais e internacionais.</p>
+                        <ul class="exp-achievements">
+                            <li>Atuação como um dos desenvolvedores mais experientes da equipe</li>
+                            <li>Desenvolvimento de sistemas de alta complexidade para operações de crédito</li>
+                            <li>Colaboração com desenvolvedores distribuídos em todo o Brasil</li>
+                            <li>Mentoria e suporte técnico para colegas de equipe</li>
+                            <li>Promoção a Analista de Sistemas por mérito e desempenho</li>
+                        </ul>
+                        <div class="tech-tags"><strong>Aprendizado:</strong> Domínio completo do universo de crédito bancário, regulamentações e complexidades operacionais.</div>
+                    </div>
+
+                    <!-- ETS -->
+                    <div class="exp-item">
+                        <div class="exp-company">ETS / Eco Consultoria<span class="exp-highlight">R$ 900 mi</span></div>
+                        <div class="exp-role">Arquiteto de Softwares</div>
+                        <div class="exp-meta">Junho 2010 - Março 2021 (10 anos 10 meses) | Natal, RN</div>
+                        <p class="exp-desc">Liderança da arquitetura e análise de software. Empresa referência no setor de captação de recursos para o 3º setor e líder de mercado há mais de 16 anos.</p>
+                        <ul class="exp-achievements">
+                            <li>Liderança técnica na criação de praticamente todos os produtos da empresa</li>
+                            <li>Arquitetura de sistemas que arrecadaram mais de <strong>R$ 900.000.000,00</strong></li>
+                            <li>Definição de todos os padrões tecnológicos da empresa</li>
+                            <li>Principal responsável pelo desenvolvimento tecnológico e inovação</li>
+                            <li>Liderança de todas as decisões relacionadas ao futuro tecnológico</li>
+                            <li>Crescimento profissional direto ao lado do CEO da empresa</li>
+                        </ul>
+                        <div class="impact-note">
+                            <strong>Impacto:</strong> Responsável direto pela infraestrutura tecnológica que permitiu a liderança de mercado da empresa por 16 anos consecutivos.
+                        </div>
+                    </div>
+
+                    <!-- RMB -->
+                    <div class="exp-item">
+                        <div class="exp-company">RMB Informática (Quadrant/Lynx)</div>
+                        <div class="exp-role">Analista de Sistemas</div>
+                        <div class="exp-meta">Janeiro 2008 - Maio 2010 (2 anos 5 meses) | Natal, RN</div>
+                        <p class="exp-desc">Sistema de backoffice mais utilizado nos shoppings do estado. Clientes: <strong>Adidas, Hering, L'Occitane, Rio Center</strong> e 50%+ das lojas de shopping.</p>
+                        <ul class="exp-achievements">
+                            <li>Customizações para grandes marcas do varejo</li>
+                            <li>Consultorias especializadas para otimização de operações</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="section-main">
+                    <h2>Competências Técnicas Detalhadas</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Banco de Dados</h4>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>SQL Server</li>
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                                <li>Entity Framework Core</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Mensageria</h4>
+                            <ul>
+                                <li>RabbitMQ</li>
+                                <li>AWS SQS</li>
+                                <li>MassTransit</li>
+                                <li>SignalR</li>
+                                <li>Webhooks</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Qualidade</h4>
+                            <ul>
+                                <li>SOLID Principles</li>
+                                <li>xUnit / Moq</li>
+                                <li>Datadog APM</li>
+                                <li>SonarQube</li>
+                                <li>Health Checks</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Ferramentas</h4>
+                            <ul>
+                                <li>MediatR (CQRS)</li>
+                                <li>AutoMapper</li>
+                                <li>FluentValidation</li>
+                                <li>Hangfire</li>
+                                <li>Swagger/OpenAPI</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Documentos</h4>
+                            <ul>
+                                <li>QuestPDF</li>
+                                <li>iText7</li>
+                                <li>CsvHelper</li>
+                                <li>ExcelDataReader</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Data Engineering</h4>
+                            <ul>
+                                <li>AWS Glue</li>
+                                <li>PySpark</li>
+                                <li>Databricks</li>
+                                <li>Azure Synapse</li>
+                                <li>Parquet</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Documentação Arquitetural</h4>
+                            <ul>
+                                <li>Diagramas C4 Model</li>
+                                <li>ADRs (Architecture Decision Records)</li>
+                                <li>Postmortems & RCAs</li>
+                                <li>RFCs (Request for Comments)</li>
+                                <li>Design Documents</li>
+                                <li>Swagger/OpenAPI</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Padrões de Projeto</h4>
+                            <ul>
+                                <li>Repository & Unit of Work</li>
+                                <li>Factory & Strategy</li>
+                                <li>CQRS & Mediator</li>
+                                <li>Dependency Injection</li>
+                                <li>Pipeline Behaviors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Differentials -->
+                <div class="section-main">
+                    <h2>Diferenciais</h2>
+                    <div class="diff-grid">
+                        <div class="diff-card">
+                            <div class="diff-title">💖 Paixão desde a Infância</div>
+                            <ul>
+                                <li>Programando desde os 8 anos de idade</li>
+                                <li>Código consistente aos 11 anos</li>
+                                <li>+30 anos de jornada contínua</li>
+                                <li>Vocação natural → carreira de sucesso</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">⚡ Alta Complexidade</div>
+                            <ul>
+                                <li>70+ bancos nacionais/internacionais</li>
+                                <li>R$ 900 mi em captação de recursos</li>
+                                <li>Soluções fintech com PIX</li>
+                                <li>70+ repos, 31+ microservices</li>
+                                <li>Grupo NC (R$ 4.5 bi/ano)</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">👥 Liderança Técnica</div>
+                            <ul>
+                                <li>+10 anos como principal responsável tecnológico</li>
+                                <li>Promoções por mérito</li>
+                                <li>Decisões estratégicas</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">🏗️ Arquitetura Moderna</div>
+                            <ul>
+                                <li>Clean Architecture, DDD, CQRS</li>
+                                <li>Microservices distribuídos</li>
+                                <li>Multi-cloud (AWS + Azure)</li>
+                                <li>Vault secrets management</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">✨ Código de Qualidade</div>
+                            <ul>
+                                <li>SOLID e Clean Code</li>
+                                <li>Documentação XML completa</li>
+                                <li>Sistemas auditáveis</li>
+                                <li>Concorrência otimista</li>
+                                <li>API Versioning (V1, V2)</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">📊 Data Engineering</div>
+                            <ul>
+                                <li>AWS Glue com PySpark</li>
+                                <li>Databricks & Synapse Analytics</li>
+                                <li>Modelagem dimensional</li>
+                                <li>Data Lakehouse (Parquet)</li>
+                                <li>Pipelines híbridos AWS+Azure</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">🤖 Inteligência Artificial</div>
+                            <ul>
+                                <li>OpenAI GPT-4 (contexto médico)</li>
+                                <li>Whisper (transcrição de áudio)</li>
+                                <li>Vision (análise de exames)</li>
+                                <li>Chat médico com IA</li>
+                                <li>Background workers para IA</li>
+                                <li>Sistema de tokens e planos</li>
+                            </ul>
+                        </div>
+                        <div class="diff-card">
+                            <div class="diff-title">🇧🇷 Mercado Brasileiro</div>
+                            <ul>
+                                <li>Integrações bancárias (PIX, TEF)</li>
+                                <li>Validações brasileiras</li>
+                                <li>Sistemas de varejo</li>
+                                <li>Força de vendas médica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="section-main">
+                    <h2>Projetos Pessoais & Open Source</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-name">medical-business</div>
+                            <div class="project-desc">Sistema médico com IA (.NET 9.0, OpenAI GPT-4, Whisper, Vision)</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">DoctorGrace</div>
+                            <div class="project-desc">App multiplataforma com IA médica (.NET 9 MAUI)</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">MainServiceDDD</div>
+                            <div class="project-desc">Template DDD (.NET 7, RabbitMQ, Redis, PostgreSQL)</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">ETL</div>
+                            <div class="project-desc">Projeto de ETL em C# para data pipelines</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">APIGateway</div>
+                            <div class="project-desc">Gateway de API para arquitetura de microservices</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">NotificationMicroservice</div>
+                            <div class="project-desc">Microserviço de notificações (.NET, Docker)</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">ClienteMicroservice</div>
+                            <div class="project-desc">Microserviço de cadastro de clientes (.NET)</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-name">UtilService/UtilCore</div>
+                            <div class="project-desc">Bibliotecas utilitárias reutilizáveis (.NET)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formação -->
+                <div class="section-main">
+                    <h2>Formação Complementar</h2>
+                    <div class="two-col">
+                        <ul style="list-style: none; font-size: 8.5pt;">
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Arquitetura de Software e Design de Sistemas
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Cloud Computing - AWS e Azure (Multi-cloud)
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Container Orchestration e GitOps
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Domain-Driven Design e CQRS
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Data Engineering e Big Data
+                            </li>
+                        </ul>
+                        <ul style="list-style: none; font-size: 8.5pt;">
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Inteligência Artificial (OpenAI API)
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Segurança - Vault, Keycloak, OAuth2/OIDC
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Banco de Dados e Performance
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                DevOps, CI/CD e Infrastructure as Code
+                            </li>
+                            <li style="margin-bottom: 3pt; padding-left: 10pt; position: relative;">
+                                <span style="position: absolute; left: 0; color: #2563eb;">•</span>
+                                Metodologias Ágeis
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stack Summary -->
+                <div class="section-main">
+                    <h2>Stack Tecnológico Completo</h2>
+                    <div style="font-size: 8pt; line-height: 1.5; color: #334155;">
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">LINGUAGENS:</strong> C#, Python, JavaScript/TypeScript, SQL, T-SQL, PL/pgSQL</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">FRAMEWORKS:</strong> .NET 6/8/9, ASP.NET Core, Entity Framework Core, Express.js, MediatR, AutoMapper, FluentValidation</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">BANCO DE DADOS:</strong> PostgreSQL, SQL Server, MySQL, Redis, Dapper, Npgsql</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">CLOUD AWS:</strong> ECR, S3, SQS, SES, SNS, Glue, Lambda, Personalize, Elastic Beanstalk, CloudWatch, RDS, IAM, Secrets Manager</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">CLOUD AZURE:</strong> Databricks, Synapse Analytics, Azure AD, Microsoft Graph</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">DEVOPS:</strong> Docker, GitHub Actions, Bitbucket Pipelines, HashiCorp Vault, OpenTofu/Terraform, SonarQube</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">MENSAGERIA:</strong> RabbitMQ, AWS SQS, MassTransit, SignalR, Webhooks</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">OBSERVABILIDADE:</strong> Datadog (APM, RUM, Tracing), Serilog, Elasticsearch, Kibana, SonarQube, Health Checks</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">PADRÕES:</strong> Repository, Unit of Work, Factory, Strategy, Decorator, Observer, Adapter, Proxy, Middleware, MVVM, Pipeline Behaviors</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">DOCUMENTAÇÃO ARQUITETURAL:</strong> Diagramas C4 Model (Context, Container, Component, Code), ADRs (Architecture Decision Records), Postmortems & RCAs, RFCs técnicos, Design Documents, Diagramas de Fluxo, Documentação de APIs (Swagger/OpenAPI)</p>
+                        <p style="margin-bottom: 4pt;"><strong style="color: #1e3a8a;">INTELIGÊNCIA ARTIFICIAL:</strong> OpenAI API (GPT-4, Whisper, Vision), Chat médico, Análise de exames, Sistema de tokens</p>
+                        <p><strong style="color: #1e3a8a;">INTEGRAÇÕES:</strong> WhatsApp Business, PIX (EMV, CRC-16), APIs Bancárias, Keycloak, RD Station, DatoCMS, Sympla, CFM, Microsoft Graph</p>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12pt;">
+                        <div style="flex: 1;">
+                            <div class="quote">"Arquitetura de software é sobre fazer escolhas que resistem ao teste do tempo"</div>
+                            <div style="margin-top: 6pt;"><strong>✅ Disponível para trabalho remoto | Aberto a propostas e novos desafios</strong></div>
+                            <div style="margin-top: 4pt;">© 2026 Wladmir Bonazza | Todos os direitos reservados</div>
+                        </div>
+                        <a href="https://wladmirdotnet.github.io/portfolio-wladmir/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block; text-align: center; background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); padding: 10pt; border-radius: 8pt; margin-left: 15pt; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4pt 12pt rgba(37,99,235,0.3); cursor: pointer;" onmouseover="this.style.transform='translateY(-2pt)'; this.style.boxShadow='0 6pt 16pt rgba(37,99,235,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4pt 12pt rgba(37,99,235,0.3)'">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wladmirdotnet.github.io/portfolio-wladmir/" alt="QR Code Portfolio" style="display: block; width: 60pt; height: 60pt; border: 2pt solid white; border-radius: 4pt; margin: 0 auto;">
+                            <div style="color: white; font-size: 7pt; font-weight: 700; margin-top: 4pt;">
+                                📱 Escaneie ou Clique Aqui!
+                            </div>
+                            <div style="color: rgba(255,255,255,0.9); font-size: 6pt; margin-top: 1pt;">
+                                🚀 Portfolio Online<br>
+                                Veja animações e projetos!
+                            </div>
+                        </a>
+                    </div>
+                    <div style="margin-top: 6pt; font-size: 7pt;">
+                        <strong>PALAVRAS-CHAVE ATS:</strong> .NET Core, .NET 6, .NET 8, .NET 9, C#, ASP.NET Core, Entity Framework Core, PostgreSQL, SQL Server, Redis, AWS, Azure, S3, SQS, SES, SNS, ECR, Lambda, Glue, PySpark, Databricks, Synapse, GitOps, Docker, GitHub Actions, HashiCorp Vault, Keycloak, OAuth2, OIDC, JWT, Clean Architecture, DDD, CQRS, Microservices, MediatR, AutoMapper, FluentValidation, Hangfire, RabbitMQ, MassTransit, SignalR, OpenAI, GPT-4, Whisper, Datadog, SonarQube, xUnit, Moq, SOLID, Design Patterns, RESTful API, Swagger, OpenAPI, PIX, Fintech, Healthcare
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Print Button -->
+    <div class="no-print" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <button onclick="window.print()" style="background: #2563eb; color: white; border: none; padding: 14px 28px; border-radius: 8px; cursor: pointer; font-weight: 600; box-shadow: 0 6px 16px rgba(37,99,235,0.4); font-family: inherit; font-size: 11pt; transition: all 0.3s;">
+            🖨️ Salvar como PDF
+        </button>
+    </div>
+
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; }
+            .page { box-shadow: none; margin: 0; width: 100%; }
+        }
+        @media screen {
+            button:hover {
+                background: #1d4ed8 !important;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(37,99,235,0.5) !important;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -95,6 +95,12 @@ export function Skills() {
               icon="CheckCircle2"
               delay={0.8}
             />
+            <SkillCard
+              title="Documentação Arquitetural"
+              items={curriculum.skills.documentation}
+              icon="FileText"
+              delay={0.9}
+            />
           </div>
         </motion.div>
       </div>

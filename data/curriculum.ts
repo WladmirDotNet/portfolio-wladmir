@@ -105,6 +105,16 @@ export const curriculum = {
       "Sympla",
       "CFM",
     ],
+    documentation: [
+      "Diagramas C4 Model (Context, Container, Component, Code)",
+      "ADRs (Architecture Decision Records)",
+      "Postmortems & RCAs (Root Cause Analysis)",
+      "RFCs (Request for Comments)",
+      "Design Documents",
+      "Diagramas de Fluxo e Sequência",
+      "Swagger/OpenAPI Documentation",
+      "Technical Specifications",
+    ],
     security: [
       "Keycloak",
       "HashiCorp Vault",

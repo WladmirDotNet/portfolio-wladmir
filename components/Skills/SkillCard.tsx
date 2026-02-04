@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Boxes, Database, Cloud, CloudCog, Workflow, MessageSquare, Link, Shield, CheckCircle2 } from "lucide-react";
+import { Boxes, Database, Cloud, CloudCog, Workflow, MessageSquare, Link, Shield, CheckCircle2, FileText } from "lucide-react";
 import { useState } from "react";
 
 interface SkillCardProps {
@@ -21,6 +21,7 @@ const iconMap: Record<string, any> = {
   Link,
   Shield,
   CheckCircle2,
+  FileText,
 };
 
 export function SkillCard({ title, items, icon, delay = 0 }: SkillCardProps) {

@@ -58,9 +58,18 @@ export function Contact() {
             Entre em{" "}
             <span className="gradient-text">Contato</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-12">
+          <p className="text-center text-muted-foreground mb-4">
             Disponível para trabalho remoto | Aberto a propostas e novos desafios
           </p>
+          <div className="text-center mb-12">
+            <a
+              href="/curriculo.html"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 glow"
+            >
+              📄 Ver Currículo Completo (PDF)
+            </a>
+          </div>
 
           {/* Contact Links Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
