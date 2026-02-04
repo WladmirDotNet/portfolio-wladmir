@@ -126,7 +126,8 @@ export const curriculum = {
       "Capacity Planning",
       "Performance Tuning e Otimização",
       "Code Review e Quality Gates",
-      "Mentoria Técnica",
+      "Mentoria Técnica e Capacitação de Equipes",
+      "Cursos Ministrados: Docker, Microservices, SQL (QAs e Devs)",
     ],
     dbaActivities: [
       "Modelagem de Banco de Dados (Relacional e NoSQL)",
@@ -336,6 +337,8 @@ export const curriculum = {
         "+10 anos como principal responsável tecnológico em empresa líder de mercado",
         "Histórico de promoções por mérito e reconhecimento técnico",
         "Experiência em decisões estratégicas de tecnologia",
+        "Capacitação de equipes: cursos de Docker, Microservices e SQL",
+        "Mentoria de QAs e Desenvolvedores em tecnologias avançadas",
       ],
     },
     {
