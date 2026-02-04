@@ -101,6 +101,18 @@ export function Skills() {
               icon="FileText"
               delay={0.9}
             />
+            <SkillCard
+              title="Atividades de Arquiteto"
+              items={curriculum.skills.architectActivities}
+              icon="Compass"
+              delay={1.0}
+            />
+            <SkillCard
+              title="Database Design & DBA"
+              items={curriculum.skills.dbaActivities}
+              icon="HardDrive"
+              delay={1.1}
+            />
           </div>
         </motion.div>
       </div>
