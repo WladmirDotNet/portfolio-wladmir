@@ -433,7 +433,7 @@ export const curriculum = {
   languages: [
     { name: "Português", level: 100, flag: "🇧🇷", note: "Nativo" },
     { name: "Espanhol", level: 100, flag: "🇪🇸", note: "Nativo (residiu no Paraguai)" },
-    { name: "Inglês", level: 80, flag: "🇺🇸", note: "Técnico (Leitura/Escrita)" },
+    { name: "Inglês", level: 60, flag: "🇺🇸", note: "Técnico (Leitura/Escrita)" },
   ],
 
   techStack: {
