@@ -21,7 +21,7 @@ export const curriculum = {
     stats: [
       { value: "30+", label: "anos com tecnologia", suffix: "anos" },
       { value: "5.4", label: "bilhões em sistemas", prefix: "R$", suffix: "bi" },
-      { value: "70+", label: "repositórios gerenciados", suffix: "repos" },
+      { value: "99+", label: "repositórios gerenciados", suffix: "repos" },
       { value: "99+", label: "microservices em produção", suffix: "serviços" },
     ],
   },
@@ -193,7 +193,7 @@ export const curriculum = {
       period: "Maio 2024 - Junho 2025 | 1 ano e 2 meses",
       location: "Foz do Iguaçu, PR | Remoto",
       highlight: "R$ 4,5 bilhões/ano em movimentação",
-      description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 70 repositórios e 99+ microservices em produção.",
+      description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 99 repositórios e 99+ microservices em produção.",
       achievements: [
         "🏆 Fundador do Marco de Manifesto de Arquitetura da Levva - criação de fundamentos e bases para padronização arquitetural em toda a empresa e ecossistemas",
         "🏗️ Criador do template base para APIs e Microserviços (.NET e Lambda Functions) usado por toda a Levva para novos produtos",
