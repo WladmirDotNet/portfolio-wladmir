@@ -63,7 +63,7 @@ export function Contact() {
           </p>
           <div className="text-center mb-12">
             <a
-              href="/curriculo.html"
+              href="/portfolio-wladmir/curriculo.html"
               target="_blank"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 glow"
             >
