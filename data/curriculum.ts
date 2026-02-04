@@ -22,7 +22,7 @@ export const curriculum = {
       { value: "30+", label: "anos com tecnologia", suffix: "anos" },
       { value: "5.4", label: "bilhões em sistemas", prefix: "R$", suffix: "bi" },
       { value: "70+", label: "repositórios gerenciados", suffix: "repos" },
-      { value: "31+", label: "microservices em produção", suffix: "serviços" },
+      { value: "99+", label: "microservices em produção", suffix: "serviços" },
     ],
   },
 
@@ -190,7 +190,7 @@ export const curriculum = {
       period: "Maio 2024 - Junho 2025 | 1 ano e 2 meses",
       location: "Foz do Iguaçu, PR | Remoto",
       highlight: "R$ 4,5 bilhões/ano em movimentação",
-      description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 70 repositórios e 31+ microservices em produção.",
+      description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 70 repositórios e 99+ microservices em produção.",
       achievements: [
         "Arquitetura de microservices em escala enterprise (70+ repos, 31+ serviços)",
         "Kubernetes (EKS) com Helm e ArgoCD para GitOps",
