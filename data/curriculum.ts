@@ -59,7 +59,7 @@ export const curriculum = {
       "SES",
       "SNS",
       "Glue",
-      "Lambda",
+      "Lambda (Serverless Microservices)",
       "Athena",
       "Secrets Manager",
       "Elastic Beanstalk",
