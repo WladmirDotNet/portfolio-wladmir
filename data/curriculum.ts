@@ -421,10 +421,11 @@ export const curriculum = {
       title: "Conhecimento Profundo do Mercado Brasileiro",
       icon: "MapPin" as const,
       items: [
+        "Sistemas bancários para 70+ bancos nacionais e internacionais",
         "Integrações bancárias e financeiras (PIX, TEF)",
-        "Validações e formatações brasileiras",
+        "Validações e formatações brasileiras (CPF, CNPJ, CEP)",
         "Sistemas de varejo e automação comercial",
-        "Sistemas de força de vendas e visitação médica",
+        "Sistemas de força de vendas e visitação médica (farmacêutico)",
       ],
     },
   ],
