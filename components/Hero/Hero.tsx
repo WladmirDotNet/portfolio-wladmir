@@ -39,8 +39,8 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="inline-block px-6 py-3 rounded-full glass glow">
-            <span className="gradient-text font-bold text-lg">
+          <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 rounded-full glass glow mx-4">
+            <span className="gradient-text font-bold text-sm sm:text-base md:text-lg">
               Programando desde os 8 anos de idade
             </span>
           </div>
@@ -50,13 +50,13 @@ export function Hero() {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-6xl md:text-8xl font-bold mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 px-4"
         >
           <span className="gradient-text">{displayedText}</span>
           <motion.span
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 0.8, repeat: Infinity }}
-            className="inline-block w-1 h-16 md:h-24 bg-primary-500 ml-2"
+            className="inline-block w-1 h-12 sm:h-14 md:h-16 lg:h-24 bg-primary-500 ml-2"
           />
         </motion.h1>
 
@@ -65,12 +65,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.8 }}
-          className="mb-6"
+          className="mb-6 px-4"
         >
-          <p className="text-xl md:text-2xl text-muted-foreground">
+          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground text-center">
             {subtitles.join(" | ")}
           </p>
-          <p className="text-lg md:text-xl text-muted-foreground mt-2">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-2 text-center">
             Backend Specialist | Cloud Engineer
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5, duration: 0.8 }}
-          className="text-lg md:text-xl text-primary-400 mb-12"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-400 mb-12 px-4 text-center"
         >
           Código consistente aos 11 anos | +30 anos de jornada tecnológica
         </motion.p>
