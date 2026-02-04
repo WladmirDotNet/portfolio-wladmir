@@ -97,6 +97,7 @@ export const curriculum = {
     ],
     integrations: [
       "OpenAI API (GPT, Whisper, Vision)",
+      "MCP (Model Context Protocol) com Claude",
       "WhatsApp Business API",
       "APIs Bancárias (PIX)",
       "APIs de Pagamento (Asaas)",
@@ -400,6 +401,7 @@ export const curriculum = {
         "OpenAI GPT-4 (Chat Completions com contexto médico)",
         "OpenAI Whisper (Transcrição de áudio médico)",
         "OpenAI Vision (Análise de imagens de exames)",
+        "MCP (Model Context Protocol) - Desenvolvimento de integrações com Claude",
         "Sistemas de chat médico com IA e histórico clínico completo",
         "Análise de exames médicos com visão computacional",
         "Background workers para processamento assíncrono de IA",
