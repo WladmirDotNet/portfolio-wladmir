@@ -395,18 +395,19 @@ export const curriculum = {
       ],
     },
     {
-      title: "Inteligência Artificial Aplicada",
+      title: "Inteligência Artificial & Desenvolvimento de Tools",
       icon: "Brain" as const,
       items: [
+        "Desenvolvimento de Tools/Functions para OpenAI GPT-4",
+        "Desenvolvimento de MCP Servers (Model Context Protocol) com Claude",
+        "OpenAI Function Calling e Structured Outputs",
         "OpenAI GPT-4 (Chat Completions com contexto médico)",
         "OpenAI Whisper (Transcrição de áudio médico)",
         "OpenAI Vision (Análise de imagens de exames)",
-        "MCP (Model Context Protocol) - Desenvolvimento de integrações com Claude",
         "Sistemas de chat médico com IA e histórico clínico completo",
         "Análise de exames médicos com visão computacional",
         "Background workers para processamento assíncrono de IA",
         "Controle de tokens e consumo de recursos de IA",
-        "Sistema de planos e assinaturas para serviços de IA",
       ],
     },
     {
