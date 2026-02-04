@@ -195,7 +195,8 @@ export const curriculum = {
       highlight: "R$ 4,5 bilhões/ano em movimentação",
       description: "Liderança técnica e arquitetura de soluções para o Grupo NC, um dos maiores grupos farmacêuticos do mundo. Responsável por mais de 70 repositórios e 99+ microservices em produção.",
       achievements: [
-        "Arquitetura de microservices em escala enterprise (70+ repos, 31+ serviços)",
+        "🏆 Fundador do Marco de Manifesto de Arquitetura da Levva - criação de fundamentos e bases para padronização arquitetural em toda a empresa e ecossistemas",
+        "Arquitetura de microservices em escala enterprise (70+ repos, 99+ serviços)",
         "Kubernetes (EKS) com Helm e ArgoCD para GitOps",
         "Pipelines CI/CD reutilizáveis com GitHub Actions e Bitbucket",
         "HashiCorp Vault para gestão de secrets com External Secrets Operator",
@@ -349,6 +350,8 @@ export const curriculum = {
       title: "Arquitetura Moderna e Escalável",
       icon: "Network" as const,
       items: [
+        "🏆 Fundador do Marco de Manifesto de Arquitetura (Levva) - padronização em toda empresa",
+        "Criação de fundamentos e bases arquiteturais para ecossistemas corporativos",
         "Domínio completo de Clean Architecture, DDD e CQRS",
         "Implementação de microservices e sistemas distribuídos",
         "Infraestrutura cloud-native com AWS e Azure (multi-cloud)",
