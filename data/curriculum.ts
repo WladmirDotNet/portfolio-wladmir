@@ -30,9 +30,9 @@ export const curriculum = {
     architecture: [
       { name: "Clean Architecture", level: 100 },
       { name: "Domain-Driven Design", level: 100 },
-      { name: "CQRS", level: 95 },
-      { name: "Event-Driven Architecture", level: 95 },
-      { name: "Microservices", level: 95 },
+      { name: "CQRS", level: 100 },
+      { name: "Event-Driven Architecture", level: 100 },
+      { name: "Microservices", level: 100 },
       { name: "API Design", level: 100 },
     ],
     backend: [
@@ -40,8 +40,8 @@ export const curriculum = {
       { name: "ASP.NET Core", level: 100 },
       { name: "Entity Framework Core", level: 100 },
       { name: "Dapper", level: 100 },
-      { name: "Python / PySpark", level: 85 },
-      { name: "Node.js", level: 75 },
+      { name: "Python / PySpark", level: 100 },
+      { name: "Node.js", level: 100 },
       { name: "SQL / T-SQL / PL/pgSQL", level: 100 },
     ],
     database: [
@@ -433,7 +433,7 @@ export const curriculum = {
   languages: [
     { name: "Português", level: 100, flag: "🇧🇷", note: "Nativo" },
     { name: "Espanhol", level: 100, flag: "🇪🇸", note: "Nativo (residiu no Paraguai)" },
-    { name: "Inglês", level: 60, flag: "🇺🇸", note: "Técnico (Leitura/Escrita)" },
+    { name: "Inglês", level: 100, flag: "🇺🇸", note: "Técnico (Leitura/Escrita)" },
   ],
 
   techStack: {
