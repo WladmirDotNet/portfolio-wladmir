@@ -25,7 +25,7 @@ export function Skills() {
           {/* Backend & Linguagens com Progress Bars */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold mb-8 text-center">
-              Backend & Linguagens
+              FRAMEWORKS E LINGUAGENS FAVORITAS
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {curriculum.skills.backend.map((skill, index) => (
