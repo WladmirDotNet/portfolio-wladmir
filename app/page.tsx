@@ -3,6 +3,7 @@ import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import { Hero } from "@/components/Hero/Hero";
 import { About } from "@/components/About/About";
 import { Skills } from "@/components/Skills/Skills";
+import { AllSkills } from "@/components/AllSkills/AllSkills";
 import { Experience } from "@/components/Experience/Experience";
 import { Projects } from "@/components/Projects/Projects";
 import { Differentials } from "@/components/Differentials/Differentials";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <AllSkills />
       <Experience />
       <Projects />
       <Differentials />
