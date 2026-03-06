@@ -87,6 +87,14 @@ const allSkillsData: SkillItem[] = [
   { category: "Cloud Azure", skill: "Synapse Analytics", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
   { category: "Cloud Azure", skill: "Azure AD", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
   { category: "Cloud Azure", skill: "Microsoft Graph", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure SQL Database", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Database for PostgreSQL", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Database for MySQL", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Container Instances", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Container Registry", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Kubernetes Service (AKS)", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Virtual Machines", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Cloud Azure", skill: "Azure Virtual Network", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
   
   // DevOps
   { category: "DevOps", skill: "Kubernetes", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
@@ -101,6 +109,14 @@ const allSkillsData: SkillItem[] = [
   { category: "DevOps", skill: "Terraform", color: "bg-purple-500/20 text-purple-600 dark:text-purple-400 border-purple-500/30" },
   { category: "DevOps", skill: "SonarQube", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
   { category: "DevOps", skill: "GitOps", color: "bg-orange-500/20 text-orange-600 dark:text-orange-400 border-orange-500/30" },
+  
+  // Infraestrutura & Redes
+  { category: "Infraestrutura & Redes", skill: "VPN Server Setup", color: "bg-red-500/20 text-red-600 dark:text-red-400 border-red-500/30" },
+  { category: "Infraestrutura & Redes", skill: "OpenVPN", color: "bg-orange-500/20 text-orange-600 dark:text-orange-400 border-orange-500/30" },
+  { category: "Infraestrutura & Redes", skill: "WireGuard", color: "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30" },
+  { category: "Infraestrutura & Redes", skill: "Network Security", color: "bg-red-500/20 text-red-600 dark:text-red-400 border-red-500/30" },
+  { category: "Infraestrutura & Redes", skill: "Linux Server Administration", color: "bg-yellow-500/20 text-yellow-600 dark:text-yellow-400 border-yellow-500/30" },
+  { category: "Infraestrutura & Redes", skill: "EC2 Configuration", color: "bg-orange-500/20 text-orange-600 dark:text-orange-400 border-orange-500/30" },
   
   // Mensageria
   { category: "Mensageria", skill: "RabbitMQ", color: "bg-orange-500/20 text-orange-600 dark:text-orange-400 border-orange-500/30" },
