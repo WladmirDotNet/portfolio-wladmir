@@ -255,7 +255,7 @@ export function AllSkills() {
               habilidade{filteredSkills.length !== 1 ? "s" : ""} encontrada{filteredSkills.length !== 1 ? "s" : ""}
               {searchTerm && (
                 <span>
-                  {" "}para "<span className="font-semibold">{searchTerm}</span>"
+                  {" "}para &ldquo;<span className="font-semibold">{searchTerm}</span>&rdquo;
                 </span>
               )}
             </div>
@@ -303,7 +303,7 @@ export function AllSkills() {
               className="text-center py-12 glass rounded-xl"
             >
               <p className="text-xl text-muted-foreground">
-                Nenhuma habilidade encontrada para "{searchTerm}"
+                Nenhuma habilidade encontrada para &ldquo;{searchTerm}&rdquo;
               </p>
               <button
                 onClick={() => setSearchTerm("")}
