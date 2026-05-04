@@ -80,6 +80,19 @@ O site pode ser facilmente deployado em:
 
 Os dados do currículo estão centralizados em `data/curriculum.ts`. Edite esse arquivo para atualizar as informações.
 
+### Tema (paleta)
+
+Os tokens globais de tema ficam em `app/globals.css` (`:root` e `.dark`).
+Para ajustar a identidade visual, altere principalmente `--primary`, `--ring` e utilitários globais como `.glow` e `.gradient-text`.
+
+### Testes automatizados
+
+```bash
+npm run test
+```
+
+O teste `test/theme-colors.test.ts` valida os tokens principais e efeitos de glow da paleta.
+
 ## 🌟 Features Destacadas
 
 1. **Hero Épico**: Background com partículas que reagem ao mouse + typing effect

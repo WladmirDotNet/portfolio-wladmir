@@ -80,7 +80,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5, duration: 0.8 }}
-          className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-400 mb-12 px-4 text-center"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-600 dark:text-primary-400 mb-12 px-4 text-center"
         >
           Código consistente aos 11 anos | +30 anos de jornada tecnológica
         </motion.p>
@@ -100,7 +100,7 @@ export function Hero() {
           </a>
           <a
             href="#experiencia"
-            className="px-8 py-4 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+            className="px-8 py-4 border-2 border-primary-600 text-primary-700 dark:text-primary-400 hover:bg-primary-600 hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"
           >
             Ver Experiência
           </a>
